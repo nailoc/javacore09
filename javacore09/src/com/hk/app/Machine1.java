@@ -9,25 +9,30 @@ public class Machine1 {
 	// 순서도에 따라서 코드를 작성할 수 있다
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		clearConsole(); 
+		
 		Scanner reader = new Scanner(System.in);
 		int inMoney = 0; // 투입금액
 		int chargeMoney = 0; // 잔액
 		int selectMenu = 0;
-		// 1-환영메시지 코드
-		System.out.println("**************************************************");
-		System.out.println("**                   JAVA                       **");
-		System.out.println("**                   COFFEE                     **");
-		System.out.println("**                   JAPANGI                    **");
-		System.out.println("**************************************************");
-		System.out.print("** 금액을 투입하세요: ");
-		inMoney = reader.nextInt();
 		
-		// 2-잔액표시
-		chargeMoney += inMoney;
-		System.out.println("** 잔액: "+chargeMoney);
-		
-		// 3-금액을 입력하고 만약 잔액 > 0 이면 자판기를 시작
 		while(true) {
+			
+			// 1-환영메시지 코드
+			System.out.println("**************************************************");
+			System.out.println("**                   JAVA                       **");
+			System.out.println("**                   COFFEE                     **");
+			System.out.println("**                   JAPANGI                    **");
+			System.out.println("**************************************************");
+			System.out.print("** 금액을 투입하세요: ");
+			inMoney = reader.nextInt();
+			
+			// 2-잔액표시
+			chargeMoney += inMoney;
+			System.out.println("** 잔액: "+chargeMoney);
+			
+			// 3-금액을 입력하고 만약 잔액 > 0 이면 자판기를 시작
+			
 			System.out.println("** 커피 메뉴입니다 ");
 			System.out.println("** 1.아메리카노(1000원) ");
 			System.out.println("** 2.카페라떼(2000원) ");
